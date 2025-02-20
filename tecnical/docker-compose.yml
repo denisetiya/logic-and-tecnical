@@ -30,6 +30,7 @@ services:
       - MONGO_INITDB_ROOT_USERNAME=denisetiya 
       - MONGO_INITDB_ROOT_PASSWORD=1iu3iuqie 
       - MONGO_INITDB_DATABASE=mahasiswa 
+    command: ["mongod", "--replSet", "rs0"] 
     volumes:
       - mongo-data:/data/db 
     networks:
