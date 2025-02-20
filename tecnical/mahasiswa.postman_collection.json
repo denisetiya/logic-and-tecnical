@@ -1,0 +1,228 @@
+{
+	"info": {
+		"_postman_id": "b6767804-4614-45b1-9b4d-4671a697c2b2",
+		"name": "mahasiswa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31096545"
+	},
+	"item": [
+		{
+			"name": "get all mahasiswa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkMjUwZDIyYTkzODVmYzQ4NDJhYTU2YWJhZjUzZmU5NDcxNmVjNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmV5YmktYTMwNTIiLCJhdWQiOiJyZXliaS1hMzA1MiIsImF1dGhfdGltZSI6MTczOTI4MjI1MiwidXNlcl9pZCI6IjhHSTY0QzRQMDFjTGhXQTVmUGUybmU0T0lrMDIiLCJzdWIiOiI4R0k2NEM0UDAxY0xoV0E1ZlBlMm5lNE9JazAyIiwiaWF0IjoxNzM5MjgyMjUyLCJleHAiOjE3MzkyODU4NTIsImVtYWlsIjoicmV5YmktYXBwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJyZXliaS1hcHBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DfvlHuoOVNoyfRqP4o05QYglyNxIGkkjnXGFBmM05LsvLpU8MNDtu1FpXkrp_LISG9_IWhY_92frTulISu2CG6iAwljvTndoySyg-gd9AQyQeCxVcdS-pPYPPP7MOzASSFUR51oW4Qc73pV7-AFll5isEn46q18z-39E3JQGKPPvd5mtT7yKKlYFtamM6qpNJ2A7t9bZJbNtozsrWHJI_H8y9yYMzUDcY4T7M2tXN7uFrmhqguwPNLpysxeAlHetzVkQqCMsfLOO6rEvX8ntVezVOfqdSw1TVpZFqmmZgqDgAFb23aaKujFmgspQ6PdJZv_hqhSrTLWKvUgCG64j8Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oiu9821jkakjhda91928kajhdmca12*&<>",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/mahasiswa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mahasiswa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get mahasiswa by npm",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkMjUwZDIyYTkzODVmYzQ4NDJhYTU2YWJhZjUzZmU5NDcxNmVjNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmV5YmktYTMwNTIiLCJhdWQiOiJyZXliaS1hMzA1MiIsImF1dGhfdGltZSI6MTczOTI4MjI1MiwidXNlcl9pZCI6IjhHSTY0QzRQMDFjTGhXQTVmUGUybmU0T0lrMDIiLCJzdWIiOiI4R0k2NEM0UDAxY0xoV0E1ZlBlMm5lNE9JazAyIiwiaWF0IjoxNzM5MjgyMjUyLCJleHAiOjE3MzkyODU4NTIsImVtYWlsIjoicmV5YmktYXBwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJyZXliaS1hcHBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DfvlHuoOVNoyfRqP4o05QYglyNxIGkkjnXGFBmM05LsvLpU8MNDtu1FpXkrp_LISG9_IWhY_92frTulISu2CG6iAwljvTndoySyg-gd9AQyQeCxVcdS-pPYPPP7MOzASSFUR51oW4Qc73pV7-AFll5isEn46q18z-39E3JQGKPPvd5mtT7yKKlYFtamM6qpNJ2A7t9bZJbNtozsrWHJI_H8y9yYMzUDcY4T7M2tXN7uFrmhqguwPNLpysxeAlHetzVkQqCMsfLOO6rEvX8ntVezVOfqdSw1TVpZFqmmZgqDgAFb23aaKujFmgspQ6PdJZv_hqhSrTLWKvUgCG64j8Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oiu9821jkakjhda91928kajhdmca12*&<>",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"messages\": [\n            {\"role\": \"user\", \"content\": \"Who are you?\"}\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mahasiswa/2212002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mahasiswa",
+						"2212002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add new mahasiswa",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkMjUwZDIyYTkzODVmYzQ4NDJhYTU2YWJhZjUzZmU5NDcxNmVjNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmV5YmktYTMwNTIiLCJhdWQiOiJyZXliaS1hMzA1MiIsImF1dGhfdGltZSI6MTczOTI4MjI1MiwidXNlcl9pZCI6IjhHSTY0QzRQMDFjTGhXQTVmUGUybmU0T0lrMDIiLCJzdWIiOiI4R0k2NEM0UDAxY0xoV0E1ZlBlMm5lNE9JazAyIiwiaWF0IjoxNzM5MjgyMjUyLCJleHAiOjE3MzkyODU4NTIsImVtYWlsIjoicmV5YmktYXBwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJyZXliaS1hcHBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DfvlHuoOVNoyfRqP4o05QYglyNxIGkkjnXGFBmM05LsvLpU8MNDtu1FpXkrp_LISG9_IWhY_92frTulISu2CG6iAwljvTndoySyg-gd9AQyQeCxVcdS-pPYPPP7MOzASSFUR51oW4Qc73pV7-AFll5isEn46q18z-39E3JQGKPPvd5mtT7yKKlYFtamM6qpNJ2A7t9bZJbNtozsrWHJI_H8y9yYMzUDcY4T7M2tXN7uFrmhqguwPNLpysxeAlHetzVkQqCMsfLOO6rEvX8ntVezVOfqdSw1TVpZFqmmZgqDgAFb23aaKujFmgspQ6PdJZv_hqhSrTLWKvUgCG64j8Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oiu9821jkakjhda91928kajhdmca12*&<>",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"nama\" : \"Mahasiswa 1\",\n\"npm\" : 2212001,\n\"alamat\" : {\n    \"provinsi\" : \"Lampung\",\n    \"kota\" : \"Bandar Lampung\",\n    \"jalan\" : \"Jl.Raya. Gg Buntu. No.11\"\n},\n\"hobi\" : [\n    \"Renang\",\n    \"Sepak Bola\",\n    \"Baca Buku\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mahasiswa/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mahasiswa",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update mahasiswa by npm",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkMjUwZDIyYTkzODVmYzQ4NDJhYTU2YWJhZjUzZmU5NDcxNmVjNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmV5YmktYTMwNTIiLCJhdWQiOiJyZXliaS1hMzA1MiIsImF1dGhfdGltZSI6MTczOTI4MjI1MiwidXNlcl9pZCI6IjhHSTY0QzRQMDFjTGhXQTVmUGUybmU0T0lrMDIiLCJzdWIiOiI4R0k2NEM0UDAxY0xoV0E1ZlBlMm5lNE9JazAyIiwiaWF0IjoxNzM5MjgyMjUyLCJleHAiOjE3MzkyODU4NTIsImVtYWlsIjoicmV5YmktYXBwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJyZXliaS1hcHBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DfvlHuoOVNoyfRqP4o05QYglyNxIGkkjnXGFBmM05LsvLpU8MNDtu1FpXkrp_LISG9_IWhY_92frTulISu2CG6iAwljvTndoySyg-gd9AQyQeCxVcdS-pPYPPP7MOzASSFUR51oW4Qc73pV7-AFll5isEn46q18z-39E3JQGKPPvd5mtT7yKKlYFtamM6qpNJ2A7t9bZJbNtozsrWHJI_H8y9yYMzUDcY4T7M2tXN7uFrmhqguwPNLpysxeAlHetzVkQqCMsfLOO6rEvX8ntVezVOfqdSw1TVpZFqmmZgqDgAFb23aaKujFmgspQ6PdJZv_hqhSrTLWKvUgCG64j8Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oiu9821jkakjhda91928kajhdmca12*&<>",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"messages\": [\n            {\"role\": \"user\", \"content\": \"Who are you?\"}\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mahasiswa/123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mahasiswa",
+						"123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete mahasiswa by npm",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjhkMjUwZDIyYTkzODVmYzQ4NDJhYTU2YWJhZjUzZmU5NDcxNmVjNTQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vcmV5YmktYTMwNTIiLCJhdWQiOiJyZXliaS1hMzA1MiIsImF1dGhfdGltZSI6MTczOTI4MjI1MiwidXNlcl9pZCI6IjhHSTY0QzRQMDFjTGhXQTVmUGUybmU0T0lrMDIiLCJzdWIiOiI4R0k2NEM0UDAxY0xoV0E1ZlBlMm5lNE9JazAyIiwiaWF0IjoxNzM5MjgyMjUyLCJleHAiOjE3MzkyODU4NTIsImVtYWlsIjoicmV5YmktYXBwQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJyZXliaS1hcHBAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.DfvlHuoOVNoyfRqP4o05QYglyNxIGkkjnXGFBmM05LsvLpU8MNDtu1FpXkrp_LISG9_IWhY_92frTulISu2CG6iAwljvTndoySyg-gd9AQyQeCxVcdS-pPYPPP7MOzASSFUR51oW4Qc73pV7-AFll5isEn46q18z-39E3JQGKPPvd5mtT7yKKlYFtamM6qpNJ2A7t9bZJbNtozsrWHJI_H8y9yYMzUDcY4T7M2tXN7uFrmhqguwPNLpysxeAlHetzVkQqCMsfLOO6rEvX8ntVezVOfqdSw1TVpZFqmmZgqDgAFb23aaKujFmgspQ6PdJZv_hqhSrTLWKvUgCG64j8Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "oiu9821jkakjhda91928kajhdmca12*&<>",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"messages\": [\n            {\"role\": \"user\", \"content\": \"Who are you?\"}\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/mahasiswa/22343",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"mahasiswa",
+						"22343"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

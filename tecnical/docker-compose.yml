@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+
+  app:
+    container_name: express-ts-app
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000" 
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=mongodb://denisetiya:1iu3iuqie@mongo:27017/mahasiswa?authSource=admin 
+      - PORT=8000
+    depends_on:
+      - mongo
+    volumes:
+      - .:/usr/src/app 
+      - /usr/src/app/node_modules 
+    networks:
+      - express-mongo-network
+
+  mongo:
+    container_name: mongo
+    image: mongo:latest
+    ports:
+      - "27017:27017" 
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=denisetiya 
+      - MONGO_INITDB_ROOT_PASSWORD=1iu3iuqie 
+      - MONGO_INITDB_DATABASE=mahasiswa 
+    volumes:
+      - mongo-data:/data/db 
+    networks:
+      - express-mongo-network
+
+volumes:
+  mongo-data:
+
+networks:
+  express-mongo-network:
+    driver: bridge
