@@ -97,10 +97,9 @@ export default class MahasiswaService {
             });
           }
       
-          // Hapus mahasiswa
-          await prisma.mahasiswa.delete({ where: { npm } });
+          const deleteMahasiswa = await prisma.mahasiswa.delete({ where: { npm } });
       
-          return { status: 200, message: "Mahasiswa berhasil dihapus" };
+          return deleteMahasiswa;
         } catch (error) {
           throw handleApiError(error);
         }
